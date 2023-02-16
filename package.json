@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for deal app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deal-app/backend.git"
+  },
+  "author": "Martynas Simanavicius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deal-app/backend/issues"
+  },
+  "homepage": "https://github.com/deal-app/backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.0.1",
+    "mongoose": "^6.9.1"
+  }
+}
