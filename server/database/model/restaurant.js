@@ -5,6 +5,7 @@ const COLLECTION_NAME = 'restaurants'
 
 const schema = new Schema(
   {
+    _id: {type: Schema.Types.Number},
     name: { type: Schema.Types.String, required: true }
   }
 )

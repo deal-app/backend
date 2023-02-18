@@ -16,9 +16,10 @@ router.get(
 router.post(
   '/restaurants',
   asyncHandler(async (req, res) => {
-    const { name } = req.body
+    const name = req.body.name
+    const _id = req.body._id
 
-    await RestaurantRepository.findOrCreate(name)
+    await RestaurantRepository.findOrCreate(name, _id)
 
     res.status(200).send({ code: 'OK', status: 200 })
   })

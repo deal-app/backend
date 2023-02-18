@@ -6,10 +6,10 @@ async function fetchAll() {
   return restaurants
 }
 
-async function findOrCreate(name) {
+async function findOrCreate(name, _id) {
   const restaurant = await RestaurantModel.findOneAndUpdate(
-    { name: name },
-    { $setOnInsert: { name: name } },
+    { _id: _id, name: name },
+    { $setOnInsert: { _id: _id, name: name } },
     { new: true, upsert: true }
   )
 
